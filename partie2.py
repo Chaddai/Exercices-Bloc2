@@ -130,7 +130,7 @@ def leCompte(cible, nombres):
                         return [f"{a} {nom} {b} = {resultat}"] + suite_ops
 
 
-cible = random.randint(1, 100)
+cible = random.randint(1, 999)
 nombres = random.choices([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 25, 50, 75, 100], k=6)
 print(
     "cible =",
