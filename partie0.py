@@ -96,6 +96,23 @@ def minMax(xs):
             max = x
     return min,max
 
+
+def exp(x, n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return x
+    else:
+        xbis = exp(x, n//2)
+        if n % 2 == 0:
+            return xbis * xbis
+        else:
+            return x * xbis * xbis
+
+for x in [2,3,4]:
+    for n in range(8):
+        print(x, "^", n, ":", exp(x,n))
+
 # ...
 
 
