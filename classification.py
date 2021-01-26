@@ -1,5 +1,4 @@
-from math import sqrt, exp
-from random import shuffle
+from math import sqrt
 
 import csv
 with open('iris.data', 'r', newline=None) as source:

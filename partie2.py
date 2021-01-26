@@ -24,13 +24,13 @@ print(rendu(493, [1, 2, 5, 10, 20, 50, 100, 200, 500]))
 ## Exercice 11
 
 
-def sac_glouton(poidMax: float, vps: list) -> list:
+def sac_glouton(poidsMax: float, vps: list) -> list:
     vps.sort(key=lambda vp: vp[0] / vp[1], reverse=True)
     sac = []
     for (v, p) in vps:
-        if p <= poidMax:
+        if p <= poidsMax:
             sac.append((v, p))
-            poidMax -= p
+            poidsMax -= p
     return sac
 
 
